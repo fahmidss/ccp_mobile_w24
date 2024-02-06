@@ -1,7 +1,7 @@
 nav {
     background-color: #5571a1;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     align-items: center;
 }
 
@@ -27,5 +27,13 @@ nav a.active {
     color: white;
     font-weight: bold;
 }
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
 
 
