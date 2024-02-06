@@ -1,0 +1,31 @@
+nav {
+    background-color: #5571a1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); 
+    align-items: center;
+}
+
+nav a {
+    color: #FFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    border: 3px solid #2b3035;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #5571a1;
+    border-color: #2b3035;
+}
+
+nav a:active,
+nav a.active { 
+    background-color: #94a4c2;
+    color: white;
+    font-weight: bold;
+}
+
+
