@@ -1,39 +1,53 @@
-nav {
+.container {
     background-color: #5571a1;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    justify-content: space-around;
     align-items: center;
 }
 
-nav a {
+.container a {
     color: #FFFF;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 14px;
     text-decoration: none;
-    font-size: 24px;
-    border: 3px solid #2b3035;
+    font-size: 20px;
+    border: 2px solid #2b3035;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-nav a:hover {
+.container a:hover {
     background-color: white;
     color: #5571a1;
     border-color: #2b3035;
 }
 
-nav a:active,
-nav a.active { 
+.container a:active,
+.container a.active { 
     background-color: #94a4c2;
     color: white;
     font-weight: bold;
 }
 
-@media screen and (max-width: 480px) {
-    nav {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        align-items: center;
-    }
+.bacon-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.cody-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
-
+.skip-to-main {
+    background-color: antiquewhite;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-100%);
+    transition: transform 0.3s;
+  }
+  
+  .skip-to-main:focus {
+    transform: translateY(0%);
+  }
